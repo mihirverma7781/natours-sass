@@ -23,4 +23,8 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+  @include respond(tabpot) {
+    padding: 0rem;
+  }
 }
