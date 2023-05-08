@@ -1,3 +1,10 @@
+/*
+0-600: PHONE
+600-900: tablet
+900-1200: landscape
+1200-1800: normal styles
+1800+: big screen 
+*/
 /* line 1, sass/base/_base.scss */
 *,
 *::after,
@@ -9,8 +16,20 @@
 /* line 9, sass/base/_base.scss */
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    /* line 9, sass/base/_base.scss */
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    /* line 9, sass/base/_base.scss */
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    /* line 9, sass/base/_base.scss */
+    html {
+      font-size: 75%; } }
 
-/* line 13, sass/base/_base.scss */
+/* line 24, sass/base/_base.scss */
 body {
   box-sizing: border-box; }
 

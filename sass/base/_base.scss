@@ -8,6 +8,17 @@
 
 html {
   font-size: 62.5%;
+  @include respond(tablan) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tabpot) {
+    font-size: 50%;
+  }
+
+  @include respond(bigd) {
+    font-size: 75%;
+  }
 }
 
 body {
